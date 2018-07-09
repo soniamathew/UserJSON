@@ -1,0 +1,49 @@
+
+
+
+****************************************** COMPILING AND EXECUTING *******************************************************
+--------------------------------------------------------------------------------------------------------------------------
+In Eclipse itself the compilation and execution parts are done.
+
+When the Userrw.java is run, it automatically reads from the input.JSON file and writes to the output.JSON file.
+
+
+
+
+*************************************************** PROGRAM LOGIC *********************************************************
+-----------------------------------------------------------------------------------------------------------------------------
+JSON is a syntax for storing and exchanging data.
+
+Here an input.JSON and an output.JSON files are there.
+
+The content of input.JSON was predefined and using Userrw.java output.JSON was written using the contents read from input.JSON.
+
+The Java packages necessary for mapping and parsing were imported with other Java packages.
+
+
+In the main() :-
+--------------
+
+
+* To read from input.JSON :
+
+   A parser was created to convert JSON string into Json Object.
+
+   Then the JSON String was parsed inside input.JSON.
+
+   Json string was then converted into JSONObject jsonObject.
+
+   Then the data read from input.JSON using jsonObject.get() and keys were read and displayed.
+
+   While doing the reading of the input.JSON there are inner loops in it, so it is necessary to use an Iterator,it is used to access the each element in the list(inner loops).
+
+   Till the end of the array is reached, the loops will continue executing,here each element is accessed using the next().
+
+
+* To write to output.JSON :
+  
+   A JSONArray was created,and the JSONObject was added to it using add().
+  
+   In the try-catch block(used since it was the most proper way to catch Exception),we used the FileWriter to write the data to the input.JSON file.
+  
+  
